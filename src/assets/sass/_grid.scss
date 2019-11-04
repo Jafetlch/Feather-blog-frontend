@@ -1,0 +1,70 @@
+// *
+// * Container
+// *
+.container {
+  @include mq-xs {
+    max-width: 95%;
+    margin: auto;
+  }
+  @include mq-s {
+    max-width: 90%;
+    margin: auto;
+  }
+  @include mq-l {
+    margin-left: 10%;
+    max-width: 90%;
+  }
+  @include mq('1000px') {
+    // margin-left: 15%;
+    // max-width: 85%;
+  }
+}
+
+// *
+// * Row
+// *
+.row {
+  display: table;
+  width: 100%;
+}
+
+// *
+// * Col
+// *
+.col {
+  width: 100%;
+  float: left;
+  &:first-child {
+    margin-left: 0;
+  }
+  // xs
+  &.xs {
+    @include mq-xs {
+      @include w-sizes;
+    }
+  }
+  // s
+  &.s {
+    @include mq-s {
+      @include w-sizes;
+    }
+  }
+  // m
+  &.m {
+    @include mq-m {
+      @include w-sizes;
+    }
+  }
+  // l
+  &.l {
+    @include mq-l {
+      @include w-sizes;
+    }
+  }
+  // xl
+  &.xl {
+    @include mq-xl {
+      @include w-sizes;
+    }
+  }
+}

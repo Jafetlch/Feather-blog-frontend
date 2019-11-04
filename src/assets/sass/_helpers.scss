@@ -1,0 +1,156 @@
+// *
+// * Bg Colors
+// *
+.bg {
+  @include colors('bg', 'red', 'red');
+  @include colors('bg', 'darkblue', 'blue');
+  @include colors('bg', 'darkgreen', 'geen');
+  @include colors('bg', $color-white, 'white');
+  @include colors('bg', $color-dark, 'dark');
+}
+
+// *
+// * Font Colors
+// *
+.text {
+  @include colors('text', 'red', 'red');
+  @include colors('text', 'darkblue', 'blue');
+  @include colors('text', 'darkgreen', 'geen');
+  @include colors('text', $color-white, 'white');
+  @include colors('text', $color-dark, 'dark');
+}
+
+// *
+// * padding
+// *
+// * p10
+// * pt10
+// * pr10
+// * pb10
+// * pl10
+.p {
+  @for $i from 1 to 6 {
+    &-#{$i * 10} {
+      padding: 10px * $i;
+    }
+  }
+
+  // * right
+  @for $i from 1 to 6 {
+    &r-#{$i * 10} {
+      padding-right: 10px * $i;
+    }
+  }
+
+  // * bottom
+  @for $i from 1 to 6 {
+    &b-#{$i * 10} {
+      padding-bottom: 10px * $i;
+    }
+  }
+
+  // * left
+  @for $i from 1 to 6 {
+    &l-#{$i * 10} {
+      padding-left: 10px * $i;
+    }
+  }
+}
+
+// *
+// * margin
+// *
+// * m10
+// * mt10
+// * mr10
+// * mb10
+// * ml10
+.m {
+  @for $i from 1 to 6 {
+    &-#{$i * 10} {
+      margin: 10px * $i;
+    }
+  }
+  @for $i from 1 to 6 {
+    &r-#{$i * 10} {
+      margin-right: 10px * $i;
+    }
+  }
+  @for $i from 1 to 6 {
+    &b-#{$i * 10} {
+      margin-bottom: 10px * $i;
+    }
+  }
+  @for $i from 1 to 6 {
+    &l-#{$i * 10} {
+      margin-left: 10px * $i;
+    }
+  }
+}
+
+// *
+// * sizes
+// *
+// * h1 - 5
+// * h10 - 100
+.h {
+  @for $i from 1 to 11 {
+    @if $i <= 5 {
+      &#{$i} {
+        height: 0px + $i;
+      }
+    }
+    &#{$i * 10} {
+      height: 10px * $i;
+    }
+  }
+}
+
+// *
+// * Hide
+// *
+.hide {
+  display: none;
+}
+
+.hide-xs-only {
+  @include mq-max-xs {
+    display: none;
+  }
+}
+
+.hide-s {
+  @include mq-max-s {
+    display: none;
+  }
+}
+
+.hide-m-down {
+  @include mq-max-m {
+    display: none;
+  }
+}
+
+.hide-m-up {
+  @include mq-max-m {
+    display: none;
+  }
+}
+
+.hide-l-down {
+  @include mq-max-l {
+    display: none;
+  }
+}
+
+.hide-xl-up {
+  @include mq-max-xl {
+    display: none;
+  }
+}
+
+.hide-xxl-only {
+  @include mq-xxl {
+    display: none;
+  }
+}

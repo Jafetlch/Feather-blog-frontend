@@ -1,0 +1,143 @@
+// *
+// * Colors
+// *
+@mixin colors($type, $color, $class) {
+  &-#{$class} {
+    @if $type == 'bg' {
+      background-color: $color;
+    }
+    color: $color;
+  }
+}
+
+// *
+// * width
+// *
+@mixin w-sizes {
+  &1 {
+    width: $w1;
+  }
+  &2 {
+    width: $w2;
+  }
+  &3 {
+    width: $w3;
+  }
+  &4 {
+    width: $w4;
+  }
+  &5 {
+    width: $w5;
+  }
+  &6 {
+    width: $w6;
+  }
+  &7 {
+    width: $w7;
+  }
+  &8 {
+    width: $w8;
+  }
+  &9 {
+    width: $w9;
+  }
+  &10 {
+    width: $w10;
+  }
+  &11 {
+    width: $w11;
+  }
+  &12 {
+    width: $w12;
+  }
+  &-one-half {
+    width: $w-one-half;
+  }
+  &-one-third {
+    width: $w-one-third;
+  }
+  &-two-thirds {
+    width: $w-two-third;
+  }
+}
+
+// *
+// * media-queries
+// *
+@mixin mq($from) {
+  @media (min-width: $from) {
+    @content;
+  }
+}
+
+// xs
+@mixin mq-xs {
+  @media (min-width: $xs) {
+    @content;
+  }
+}
+@mixin mq-max-xs {
+  @media (max-width: $xs) {
+    @content;
+  }
+}
+
+// s
+@mixin mq-s {
+  @media (min-width: $s) {
+    @content;
+  }
+}
+@mixin mq-max-s {
+  @media (max-width: $s) {
+    @content;
+  }
+}
+
+// m
+@mixin mq-m {
+  @media (min-width: $m) {
+    @content;
+  }
+}
+@mixin mq-max-m {
+  @media (max-width: $m) {
+    @content;
+  }
+}
+
+// l
+@mixin mq-l {
+  @media (min-width: $l) {
+    @content;
+  }
+}
+@mixin mq-max-l {
+  @media (max-width: $l) {
+    @content;
+  }
+}
+
+// xl
+@mixin mq-xl {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+@mixin mq-max-xl {
+  @media (max-width: $xl) {
+    @content;
+  }
+}
+
+// xxl
+@mixin mq-xxl {
+  @media (min-width: $xxl) {
+    @content;
+  }
+}
+@mixin mq-max-xxl {
+  @media (max-width: $xxl) {
+    @content;
+  }
+}

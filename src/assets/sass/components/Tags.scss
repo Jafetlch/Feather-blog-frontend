@@ -1,0 +1,12 @@
+@import '../variables';
+
+.tags {
+  margin-top: 10px;
+  &-item {
+    margin-right: 10px;
+    border-radius: 30px;
+    background: $color-dark;
+    padding: 10px 15px;
+    color: $color-white;
+  }
+}
