@@ -1,13 +1,16 @@
 import React from 'react'
 
+import logo from '../../assets/images/logo.svg'
+
 export const SideSection = ({ componentClass = { undefined } }) => {
   return (
-    <div className={componentClass}>
-      <div className="row">
-        <h3 className="pb-40">Feather-blog</h3>
-        <h6 className="pb-30 pl-20">latest posts</h6>
-        <h6 className="pb-30 pl-20">tags</h6>
-      </div>
+    <div className={componentClass} style={{ width: '271px' }}>
+      <img src={logo} alt="logo" style={{ width: '100%' }} />
+      <h5 className="text-end">Latest posts</h5>
+      <h5 className="text-end">Tags</h5>
+      <div className="h70" />
+      <h6 className="text-end">Login</h6>
+      <h6 className="text-end">sign-up</h6>
     </div>
   )
 }

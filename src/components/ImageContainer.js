@@ -4,7 +4,8 @@ export const ImageContainer = ({
   children,
   image,
   componentClass = { undefined },
-  heightImage
+  heightImage,
+  widthImage
 }) => {
   return (
     <div
@@ -14,7 +15,8 @@ export const ImageContainer = ({
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        height: heightImage || '400px'
+        height: heightImage || '400px',
+        width: widthImage || '100%'
       }}
     >
       {children}

@@ -1,25 +1,27 @@
 import React from 'react'
 import { ImageContainer } from './ImageContainer'
 
-export const Card = ({
-  image = 'undefine',
-  title,
-  content,
-  large = false,
-  tags
-}) => {
+export const Card = ({ image = 'undefine', title, content, date, tags }) => {
   return (
     <div className="card">
       <div className="card-content">
-        <ImageContainer
-          componentClass="card-img"
-          image={image}
-          heightImage={large ? '400px' : '250px'}
-        />
+        {!tags && <div className="card-content-title">{title}</div>}
+        {content && (
+          <div className="card-content-content">
+            <p>{content}</p>
+          </div>
+        )}
+        <div className="card-content-date">
+          {new Date(date).toLocaleDateString()}
+        </div>
         {tags}
-        {!tags && <h6 className="pl-20">{title}</h6>}
-        <p className="pl-20">{content}</p>
       </div>
+      <ImageContainer
+        componentClass="card-img"
+        image={image}
+        widthImage={'190px'}
+        heightImage={'170px'}
+      />
     </div>
   )
 }

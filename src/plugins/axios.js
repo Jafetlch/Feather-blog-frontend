@@ -11,17 +11,17 @@ const api = Axios.create({
   }
 })
 
-api.interceptors.request.use(
-  config => {
-    config.headers = {
-      Authorization: `Bearer ${'token'}`
-    }
-    return config
-  },
-  err => {
-    // error
-    return Promise.reject(err)
-  }
-)
+// api.interceptors.request.use(
+//   config => {
+//     config.headers = {
+//       Authorization: `Bearer ${'token'}`
+//     }
+//     return config
+//   },
+//   err => {
+//     // error
+//     return Promise.reject(err)
+//   }
+// )
 
 export default api

@@ -8,12 +8,12 @@ export const Navigation = () => {
           <span></span>
         </div>
         <div className="items">
-          <div className="item">
+          {/* <div className="item">
             <span>Blog</span>
-          </div>
-          <div className="item">
+          </div> */}
+          {/* <div className="item">
             <span>Projects</span>
-          </div>
+          </div> */}
         </div>
       </nav>
     </header>
