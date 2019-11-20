@@ -109,48 +109,18 @@
 // *
 // * Hide
 // *
-.hide {
-  display: none;
-}
+.hide { display: none; }
 
-.hide-xs-only {
-  @include mq-max-xs {
-    display: none;
-  }
-}
+.hide-xs-only { @include mq-max-xs { display: none; } }
 
-.hide-s {
-  @include mq-max-s {
-    display: none;
-  }
-}
+.hide-s { @include mq-max-s { display: none; } }
 
-.hide-m-down {
-  @include mq-max-m {
-    display: none;
-  }
-}
+.hide-m-down { @include mq-max-m { display: none; } }
 
-.hide-m-up {
-  @include mq-max-m {
-    display: none;
-  }
-}
+.hide-m-up { @include mq-max-m { display: none; } }
 
-.hide-l-down {
-  @include mq-max-l {
-    display: none;
-  }
-}
+.hide-l-down { @include mq-max-l { display: none; } }
 
-.hide-xl-up {
-  @include mq-max-xl {
-    display: none;
-  }
-}
+.hide-xl-up { @include mq-max-xl { display: none; } }
 
-.hide-xxl-only {
-  @include mq-xxl {
-    display: none;
-  }
-}
+.hide-xxl-only { @include mq-xxl { display: none; } }

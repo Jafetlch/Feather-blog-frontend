@@ -2,8 +2,8 @@ import React from 'react'
 
 import { SideSection } from './SideSection'
 import { PostSection } from './PostSection'
-import { CenterSection } from './CenterSection'
 import { usePostValues } from '../../context'
+import { CenterSection } from './CenterSection'
 
 export const Content = () => {
   const { postId } = usePostValues()

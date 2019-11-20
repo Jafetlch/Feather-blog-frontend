@@ -5,6 +5,7 @@ import { Card } from '../Card'
 import { usePostValues } from '../../context'
 
 import latestPosts from '../../assets/images/latest-posts.svg'
+import { LoadingOrError } from '../LoadingOrError'
 
 export const CenterSection = ({ componentClass = { undefined } }) => {
   const {
@@ -32,17 +33,10 @@ export const CenterSection = ({ componentClass = { undefined } }) => {
             Latest Posts
           </div>
         </div>
-        {postsError ? (
-          <div>
-            Error...
-            <span role="img" aria-label="emoji">
-              💔
-            </span>
-          </div>
-        ) : postsLoading ? (
-          <div>loading...</div>
-        ) : (
-          posts.map(post => (
+        <LoadingOrError
+          error={postsError}
+          loading={postsLoading}
+          content={posts.map(post => (
             <div
               key={post._id}
               onClick={() => {
@@ -57,8 +51,8 @@ export const CenterSection = ({ componentClass = { undefined } }) => {
                 content={post.content}
               />
             </div>
-          ))
-        )}
+          ))}
+        />
       </div>
     </div>
   )
