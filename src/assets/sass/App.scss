@@ -1,0 +1,22 @@
+@import './assets/css/normalize.css';
+// * assets
+@import './feather/variables';
+@import './feather/mixins';
+@import './feather/grid';
+@import './feather/helpers';
+@import './feather/fonts';
+@import './feather/lists';
+@import './feather/tables';
+@import './feather/code';
+@import './feather/btn';
+@import './feather/colors';
+@import './feather/flex';
+// * Components
+@import './components/Card.scss';
+@import './components/Tags.scss';
+@import './components/Paper.scss';
+@import './components/Input.scss';
+@import './components/Button.scss';
+// * Layout
+@import './layout/Navigation.scss';
+@import './layout/footer.scss';

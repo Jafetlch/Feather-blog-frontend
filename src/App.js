@@ -5,18 +5,20 @@ import { BrowserRouter as Router } from 'react-router-dom'
 // import { Navigation } from './components/layout/Navigation'
 import { Content } from './components/layout/Content'
 // import { Footer } from './components/layout/Footer'
-import { PostProvider, LoadingProvider } from './context'
+import { PostProvider } from './context'
+import { Login } from './pages/Login'
+import { useLoginValues } from './context/login-context'
 
 export const App = () => {
+  const { user } = useLoginValues()
   return (
-    <LoadingProvider>
-      <Router>
-        {/* <Navigation /> */}
-        <PostProvider>
+    <Router>
+      {!user && <Login />}
+      {/* <Navigation /> */}
+      {/* <PostProvider>
           <Content />
-        </PostProvider>
-        {/* <Footer /> */}
-      </Router>
-    </LoadingProvider>
+        </PostProvider> */}
+      {/* <Footer /> */}
+    </Router>
   )
 }

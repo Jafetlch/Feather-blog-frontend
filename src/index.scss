@@ -1,4 +1,4 @@
-@import './App.scss';
+@import './assets/sass/App.scss';
 
 @font-face {
   font-family: 'Segoe UI';
@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Lovelo", "Segoe UI";
+  font-family: "Roboto", "Lovelo", "Segoe UI";
   background-color: $dark-color;
   color: $font-color;
 }

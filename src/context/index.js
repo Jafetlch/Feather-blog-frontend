@@ -1,15 +1,11 @@
 import { PostContext, PostProvider, usePostValues } from './posts-context'
-import {
-  LoadingContext,
-  LoadingProvider,
-  useLoadingValues
-} from './loading-context'
+import { LoginContext, LoginProvider, useLoginValues } from './login-context'
 
 export {
   PostContext,
   PostProvider,
   usePostValues,
-  LoadingContext,
-  LoadingProvider,
-  useLoadingValues
+  LoginContext,
+  LoginProvider,
+  useLoginValues
 }

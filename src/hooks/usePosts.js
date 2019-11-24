@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from '../plugins/axios'
 
-import { postsQuery, postQuery } from '../constants/graphQuery'
+import { postQuery } from '../constants/graphQueryPost'
+import { postsQuery } from '../constants/graphQueryPosts'
 
 export const useSelectedPost = () => {
   const [postId, setPostId] = useState(null)

@@ -1,4 +1,4 @@
 import { usePosts, useSelectedPost } from './usePosts'
-import { useLoading } from './useLoading'
+import { useLogin } from './useLogin'
 
-export { usePosts, useSelectedPost, useLoading }
+export { usePosts, useSelectedPost, useLogin }
