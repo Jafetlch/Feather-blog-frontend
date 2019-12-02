@@ -6,6 +6,7 @@ export const Input = ({
   autoFocus = true,
   required = true,
   span,
+  value,
   getValue
 }) => {
   return (
@@ -13,13 +14,14 @@ export const Input = ({
       <input
         type={type}
         name={name}
-        autocorrect="off"
-        autocomplete="off"
+        value={value}
+        autoCorrect="off"
+        autoComplete="off"
         autoFocus={autoFocus}
         required={required}
         onChange={e => getValue(e.target.value)}
       />
-      <label for={name}>
+      <label htmlFor={name}>
         <span className="label-name">{span}</span>
       </label>
     </div>
