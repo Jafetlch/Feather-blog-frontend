@@ -5,11 +5,12 @@ export const ImageContainer = ({
   image,
   componentClass = { undefined },
   heightImage,
-  widthImage
+  widthImage,
+  className
 }) => {
   return (
     <div
-      className={componentClass}
+      className={className}
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',

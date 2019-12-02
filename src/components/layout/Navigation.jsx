@@ -1,21 +1,16 @@
 import React from 'react'
 
+import logo from '../../assets/logo.svg'
+import perfil from '../../assets/perfil.svg'
+
+import { ImageContainer } from '../ImageContainer'
+
 export const Navigation = () => {
   return (
-    <header>
-      <nav className="">
-        <div className="app-name">
-          <span></span>
-        </div>
-        <div className="items">
-          <div className="item">
-            <span>Blog</span>
-          </div>
-          <div className="item">
-            <span>Projects</span>
-          </div>
-        </div>
-      </nav>
+    <header className="container">
+      <ImageContainer className={'logo'} image={logo} />
+      <div className="center-bar" />
+      <ImageContainer className="perfil" image={perfil} />
     </header>
   )
 }
