@@ -17,9 +17,18 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Roboto", "Lovelo", "Segoe UI";
+  font-family: "Roboto", "Segoe UI";
   background-color: $dark-color;
   color: $font-color;
+}
+
+header, main {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  margin-top: 58px !important;
 }
 
 code {

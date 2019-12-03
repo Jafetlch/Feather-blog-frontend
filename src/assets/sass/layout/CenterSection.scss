@@ -1,0 +1,9 @@
+.center-section {
+  width: 650px;
+  margin-left: 25px;
+  &-search-bar {
+    height: 50px;
+    width: 100%;
+    background: $gray-color;
+  }
+}

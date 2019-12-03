@@ -8,8 +8,8 @@ import { ImageContainer } from '../ImageContainer'
 export const Navigation = () => {
   return (
     <header className="container">
-      <ImageContainer className={'logo'} image={logo} />
-      <div className="center-bar" />
+      <ImageContainer className="logo" image={logo} />
+      <div className="center-bar hide-s" />
       <ImageContainer className="perfil" image={perfil} />
     </header>
   )

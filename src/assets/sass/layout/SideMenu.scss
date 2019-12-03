@@ -1,0 +1,18 @@
+.side-menu {
+  width: 245px !important;
+  background: transparent;
+  border-radius: 10px;
+  border: $gray-color solid 1px;
+  padding: 75px 21px 18px 21px;
+  font-size: 18px;
+  text-align: start;
+  
+  &-item {
+    margin: 15px 0;
+    cursor: pointer;
+
+    &-version {
+      font-size: 12px;
+    }
+  }
+}

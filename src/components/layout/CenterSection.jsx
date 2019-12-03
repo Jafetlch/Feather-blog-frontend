@@ -4,10 +4,9 @@ import image from '../../assets/images/bg-test.jpg'
 import { Card } from '../Card'
 import { usePostValues } from '../../context'
 
-import latestPosts from '../../assets/images/latest-posts.svg'
 import { LoadingOrError } from '../LoadingOrError'
 
-export const CenterSection = ({ componentClass = { undefined } }) => {
+export const CenterSection = ({ className = 'undefined' }) => {
   const {
     posts,
     postsLoading,
@@ -17,22 +16,9 @@ export const CenterSection = ({ componentClass = { undefined } }) => {
   } = usePostValues()
 
   return (
-    <div className={componentClass}>
-      <div className="row pl-20">
-        <div className="text-end" style={{ position: 'relative' }}>
-          <img src={latestPosts} alt="latest-post" />
-          <div
-            className="title"
-            style={{
-              position: 'absolute',
-              right: '0',
-              bottom: '8px',
-              fontSize: '30px'
-            }}
-          >
-            Latest Posts
-          </div>
-        </div>
+    <div className={className}>
+      <div className="center-section">
+        <div className="center-section-search-bar"></div>
         <LoadingOrError
           error={postsError}
           loading={postsLoading}
@@ -49,6 +35,7 @@ export const CenterSection = ({ componentClass = { undefined } }) => {
                 title={post.title}
                 date={post.createdAt}
                 content={post.content}
+                tag={post.tag}
               />
             </div>
           ))}

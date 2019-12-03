@@ -6,7 +6,9 @@ export const ImageContainer = ({
   componentClass = { undefined },
   heightImage,
   widthImage,
-  className
+  className,
+  height,
+  width
 }) => {
   return (
     <div

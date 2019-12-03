@@ -12,19 +12,18 @@ header {
 
   .logo {
     height: 100% !important;
-    width: 310px !important;
-    margin-right: 25px;
+    width: 245px !important;
   }
 
   .center-bar {
     height: 100%;
-    width: 100%;
-    border: $gray-color solid 1px ;
+    width: 565px;
+    border: $gray-color solid 1px;
+    margin: 0 25px;
   }
 
   .perfil {
     height: 100% !important;
-    width: 85px !important;
-    margin-left: 25px;
+    width: 60px !important;
   }
 }
