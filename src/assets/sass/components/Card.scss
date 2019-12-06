@@ -7,15 +7,26 @@
   background: $dark-color;
   font-family: 'Segoe UI';
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  border-bottom: #363636 solid 1px;
+  padding-bottom: 48px;
   line-height: 20px;
 
   &-content {
     width: 480px;
     margin-left: 20px;
     position: relative;
+
+    .post-tag {
+      font-size: 14px;
+      font-weight: Light;
+    }
+    .post-title {
+      font-size: 18px;
+      font-weight: Bold;
+    }
+    .post-content {
+      font-size: 16px;
+      line-height: 24px;
+    }
 
     &-date {
       font-size: 16px;

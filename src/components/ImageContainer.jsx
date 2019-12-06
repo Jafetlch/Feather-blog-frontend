@@ -3,12 +3,10 @@ import React from 'react'
 export const ImageContainer = ({
   children,
   image,
-  componentClass = { undefined },
-  heightImage,
-  widthImage,
   className,
   height,
-  width
+  width,
+  avatar = false
 }) => {
   return (
     <div
@@ -18,8 +16,9 @@ export const ImageContainer = ({
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        height: heightImage || '400px',
-        width: widthImage || '100%'
+        height: height,
+        width: width,
+        borderRadius: avatar ? '100%' : '0px'
       }}
     >
       {children}
